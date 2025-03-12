@@ -18,4 +18,4 @@ s = "GoodDay"
 for i in s:
     print(i)
 
-print("Mohsin Dev")
+print("Mohsin Dev is a good dev")
