@@ -33,8 +33,15 @@ if x>0:
 a=4.5
 print (type(a))
 
+y = complex(3,5)
+print(type(y))
+print(y)
+
 str1 = "Safe"
 print(str1)
+
+str2 = "Artificial Intelligence"
+print(str2[4:10])
 
 list1 = [2,4,6,8]
 print(list1) 
