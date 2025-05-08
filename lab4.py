@@ -7,7 +7,10 @@ class stack:
         # self.list = [item] + self.list
 
     def pop(self):
-        return self.list.pop()
+        if self.list == []:
+            print("List is empty")
+        else:
+            return self.list.pop()
     
 s = stack()
 s.push(10)

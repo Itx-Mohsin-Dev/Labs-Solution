@@ -24,6 +24,16 @@ print("\nP3")
 #             break 
 
 
+print("\nP3")
+# import random
+# num = random.randint(1,9)
+
+# while(1):
+#     user = int(input("Enter your guess: "))
+#     if(user == num):
+#         print("Your guess is correct")
+#         break
+
 print("\nP4")
 # for i in range(5):
 #     for j in range(i+1):
@@ -66,6 +76,14 @@ print("\nP5 Sol2")
 # a = input("Enter something")
 # print(type(a))
 
+
+print("\nP5 Sol2")
+# word = input("Enter word")
+# length = len(word)
+# str = []
+# for i in range(length):
+#     str.append(word[-(i+1)])
+# print(f"reverse string is {str}")
 
 print("\nP6")
 # even = 0
@@ -152,29 +170,43 @@ print("\nP11")
 # for i in range(len(list)):
 #     print(list1[i],end=" ... ")
 
+#-------------------------------------
+
+# word = ""
+# list = []
+
+# while(True):
+#     word = input("Enter a word: ")
+#     if(word == ""):
+#         break 
+#     list.append(word)
+
+# for i in range(len(list)):
+#     print(f"{list[i].lower()} ",end=" ")
+
 
 print("\nP12")
-# l = []
-# x = 0
-# while(True):
-#     dig = input("Enter a 4 digit binary number: ")
-#     if dig == "":
-#         break
-#     l.append(dig)
+l = []
+x = 0
+while(True):
+    dig = input("Enter a 4 digit binary number: ")
+    if dig == "":
+        break
+    l.append(dig)
 
-# for i in range(len(l)):
-#     dig = l[i]
-#     if dig[0] == '1':
-#         x += 8
-#     if dig[1] == '1':
-#         x += 4
-#     if dig[2] == '1':
-#         x += 2
-#     if dig[3] == '1':
-#         x += 1
+for i in range(len(l)):
+    dig = l[i]
+    if dig[0] == '1':
+        x += 8
+    if dig[1] == '1':
+        x += 4
+    if dig[2] == '1':
+        x += 2
+    if dig[3] == '1':
+        x += 1
     
-#     if x%5 == 0:
-#         print(dig," is divisible by 5")
+    if x%5 == 0:
+        print(dig," is divisible by 5")
 
 
 print("\nP13")
@@ -197,42 +229,42 @@ print("\nP13")
 
 
 print("\nP14")
-a = 0
-b = 0
-c = 0
-d = 0
-password = input("Enter your password: ")
-length = len(password)
-if length > 6 and length < 16:
-    for i in range(length):
-        if password[i] >= 'a' and password[i] <= 'z':
-            a = 1
-            break        
-    if a == 0:
-        print("Invalid password...Your password should have a lower case letter!!!") 
-    else:
-        for i in range(length):
-            if password[i] >= 'A' and password[i] <= 'Z':
-                b = 1
-                break 
-        if b == 0:
-            print("Invalid password...Your password should have an upper case letter!!!")
-        else:
-            for i in range(length):
-                if password[i] >= '0' and password[i] <= '9':
-                    c = 1
-                    break
-            if c == 0:
-                print("Invalid password...Your password should have a digit!!!")
-            else:
-                for i in range(length):
-                    if password[i] == '$' or password[i] == '@' or password[i] == '#':
-                        d = 1
-                        break
-                if d == 0:
-                    print("Invalid password...Your password should have a special character!!!")
-                else:
-                    print("Correct Password")
-else:
-        print("Invalid password...Your password should be between 6 and 16 characters!!!")
+# a = 0
+# b = 0
+# c = 0
+# d = 0
+# password = input("Enter your password: ")
+# length = len(password)
+# if length > 6 and length < 16:
+#     for i in range(length):
+#         if password[i] >= 'a' and password[i] <= 'z':
+#             a = 1
+#             break        
+#     if a == 0:
+#         print("Invalid password...Your password should have a lower case letter!!!") 
+#     else:
+#         for i in range(length):
+#             if password[i] >= 'A' and password[i] <= 'Z':
+#                 b = 1
+#                 break 
+#         if b == 0:
+#             print("Invalid password...Your password should have an upper case letter!!!")
+#         else:
+#             for i in range(length):
+#                 if password[i] >= '0' and password[i] <= '9':
+#                     c = 1
+#                     break
+#             if c == 0:
+#                 print("Invalid password...Your password should have a digit!!!")
+#             else:
+#                 for i in range(length):
+#                     if password[i] == '$' or password[i] == '@' or password[i] == '#':
+#                         d = 1
+#                         break
+#                 if d == 0:
+#                     print("Invalid password...Your password should have a special character!!!")
+#                 else:
+#                     print("Correct Password")
+# else:
+#         print("Invalid password...Your password should be between 6 and 16 characters!!!")
 
